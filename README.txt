@@ -30,4 +30,8 @@ Credits:
 	Other:
 		jQuery (jquery.com)
 		Scrollex (github.com/ajlkn/jquery.scrollex)
+
 		Responsive Tools (github.com/ajlkn/responsive-tools)
+
+Acknowledgement From Boyu:
+Special thanks to [Siyan Sylvia Li](https://siyan-sylvia-li.com/) - I discovered her beautiful website and drew some CSS design inspiration from her.
