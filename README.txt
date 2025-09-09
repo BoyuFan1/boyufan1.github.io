@@ -34,4 +34,5 @@ Credits:
 		Responsive Tools (github.com/ajlkn/responsive-tools)
 
 Acknowledgement From Boyu:
-Special thanks to [Siyan Sylvia Li](https://siyan-sylvia-li.com/) - I discovered her beautiful website and drew some CSS design inspiration from her.
+Special thanks to Siyan Li (https://siyan-sylvia-li.com/) - I discovered her beautiful website and drew some CSS design inspiration from her.
+
