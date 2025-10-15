@@ -15,16 +15,42 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
 			#name-heading::before {
-			  content: 'Boyu Fan';
-			  color: hsl(30, 62%, 78%, 0.88);
-			  font-size: 160px;
-			  position: absolute;
-			  top: -208px;
-			  left: -15px;  /* ← move more left */
-			  width: 100%;
-			  text-align: center;
-			  z-index: 0;
-			  pointer-events: none;
+			content: 'Boyu Fan';
+			color: hsl(30, 62%, 78%, 0.88);
+			font-size: 160px;
+			position: absolute;
+			top: -208px;
+			left: -15px;
+			width: 100%;
+			text-align: center;
+			z-index: 0;
+			pointer-events: none;
+			white-space: nowrap; /* Prevent text wrapping */
+			}
+
+			/* Tablet and smaller laptops */
+			@media screen and (max-width: 1280px) {
+			#name-heading::before {
+				font-size: 120px;
+				top: -160px;
+				left: -10px;
+			}
+			}
+
+			/* Small tablets and large phones */
+			@media screen and (max-width: 980px) {
+			#name-heading::before {
+				font-size: 80px;
+				top: -110px;
+				left: 0;
+			}
+			}
+
+			/* Mobile phones */
+			@media screen and (max-width: 736px) {
+			#name-heading::before {
+				display: none; /* Hide on small screens to avoid overlap */
+			}
 			}
 			.work-list {
 			margin-left: 0;
