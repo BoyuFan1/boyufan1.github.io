@@ -51,6 +51,10 @@
 			#name-heading::before {
 				display: none; /* Hide on small screens to avoid overlap */
 			}
+
+			#name-heading {
+				margin-top: 1.5rem !important;
+			}
 			}
 			.work-list {
 			margin-left: 0;
@@ -77,9 +81,157 @@
 			border-bottom: 1px solid #333333;
 			}
 
-			.features section {
-				padding: 1em 2em !important;
-				display: block !important;
+			.teach-school {
+			margin-bottom: 1.75rem;
+			}
+
+			.teach-head {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: baseline;
+			justify-content: space-between;
+			gap: 0 1rem;
+			padding-bottom: 0.3em;
+			margin-bottom: 0.4em;
+			border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+			}
+
+			.teach-name {
+			color: #306f5e;
+			font-weight: 700;
+			white-space: nowrap;
+			}
+
+			.teach-role {
+			color: #8c8c8c;
+			font-size: 0.7em;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+			white-space: nowrap;
+			}
+
+			.teach-list {
+			list-style: none;
+			margin: 0;
+			padding-left: 0;
+			font-size: 0.9375em;
+			}
+
+			.teach-list li {
+			display: flex;
+			align-items: baseline;
+			justify-content: space-between;
+			gap: 1rem;
+			padding: 0.35em 0;
+			line-height: 1.5;
+			color: #333333;
+			}
+
+			.teach-code {
+			font-weight: 700;
+			margin-right: 0.5em;
+			}
+
+			.teach-note {
+			display: block;
+			color: #8c8c8c;
+			font-size: 0.85em;
+			font-style: italic;
+			}
+
+			.teach-term {
+			color: #8c8c8c;
+			font-size: 0.9em;
+			white-space: nowrap;
+			}
+
+			@media screen and (max-width: 736px) {
+			.teach-head {
+				flex-direction: column;
+				align-items: flex-start;
+			}
+
+			.teach-list li {
+				flex-direction: column;
+				gap: 0;
+			}
+			}
+
+			.news-list {
+			list-style: none;
+			margin: 0;
+			padding-left: 0;
+			font-size: 0.9375em;
+			}
+
+			.news-list li {
+			display: flex;
+			align-items: baseline;
+			gap: 1.25rem;
+			padding: 0.35em 0;
+			line-height: 1.5;
+			color: #333333;
+			}
+
+			.news-date {
+			flex: 0 0 5.5em;
+			color: #306f5e;
+			font-weight: 700;
+			white-space: nowrap;
+			}
+
+			.avatar-col {
+			margin-left: -35px;
+			margin-top: -50px;
+			}
+
+			.avatar-col img {
+			display: block;
+			}
+
+			@media screen and (max-width: 736px) {
+			.avatar-wrap {
+				margin: 0 auto;
+				max-width: 200px !important;
+			}
+
+			.avatar-col {
+				margin: 0;
+			}
+			}
+
+			ul.icons.about-social {
+			display: flex;
+			justify-content: center;
+			gap: 0.85rem;
+			margin: 1.4rem 0 0 0;
+			}
+
+			ul.icons.about-social li {
+			padding: 0;
+			}
+
+			ul.icons.about-social li > a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 2.5rem;
+			height: 2.5rem;
+			border: 1px solid rgba(48, 111, 94, 0.35);
+			border-radius: 50%;
+			color: #306f5e;
+			font-size: 1.05rem;
+			transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+			}
+
+			ul.icons.about-social li > a:before {
+			line-height: 1;
+			}
+
+			ul.icons.about-social li > a:hover {
+			background-color: #306f5e;
+			border-color: #306f5e;
+			color: #F8F5E9;
 			}
 		</style>
 	</head>
@@ -94,7 +246,6 @@
 							<li><a href="#one">Publications</a></li>
 							<li><a href="#two">Teaching</a></li>
 							<li><a href="#three">News</a></li>
-							<li><a href="#four">Get in touch</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -108,8 +259,15 @@
 					<div class="inner" style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center;">
 					  
 					  <!-- Left: Avatar -->
-					  <div style="flex: 1 1 240px; max-width: 240px;">
-						<img src="images/avatar.jpg" alt="Avatar" style="border-radius: 50%; width: 100%; margin-left: -35px; margin-top: -50px;">
+					  <div class="avatar-wrap" style="flex: 1 1 240px; max-width: 240px;">
+						<div class="avatar-col">
+						  <img src="images/avatar.jpg" alt="Avatar" style="border-radius: 50%; width: 100%;">
+						  <ul class="icons about-social">
+							<li><a href="https://github.com/BoyuFan1" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.linkedin.com/in/boyu-fan-04669b22b/?trk=public_profile_browsemap" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://scholar.google.com/citations?user=TJ2jiz8AAAAJ&hl=en" target="_blank" rel="noopener" title="Google Scholar" aria-label="Google Scholar" class="icon solid fa-graduation-cap"><span class="label">Google Scholar</span></a></li>
+						  </ul>
+						</div>
 					</div>
 				  
 					  <!-- Right: Text -->
@@ -119,7 +277,7 @@
 							<span id="typed" style="font-size: 38px;"></span>
 						</h1>
 				  
-						<h3 style="color: rgba(22,133,46,0.82);"><b>boyu.fan@nyu.edu</b></h3>
+						<h3 style="color: rgba(22,133,46,0.82);"><b><a href="mailto:boyu.fan@nyu.edu">boyu.fan@nyu.edu</a></b></h3>
 						<h3>
 						  <span style="color: #5a886a"><b>Biostatistics Ph.D. Student</b></span> at New York University.
 						</h3>
@@ -127,44 +285,38 @@
 						<p style="margin-top: 1em;"><b>Welcome!</b></p>
 				  
 						<p style="margin-bottom: 1.5em; ">
-							I am a first year Ph.D. student in Biostatistics at New York University, where I am fortunate to be advised by Professors
-							<a href="https://publichealth.nyu.edu/faculty/yajun-mei" target="_blank">
-							  <span style="color: #306f5e; font-weight: bold;">Yajun Mei</span>
-							</a> and 
-							<a href="https://publichealth.nyu.edu/faculty/shu-xu" target="_blank">
-							  <span style="color: #306f5e; font-weight: bold;">Shu Xu</span>
+							I am a second-year Ph.D. student in Biostatistics at New York University, where I am fortunate to be advised by Professors
+							<a href="https://publichealth.nyu.edu/faculty/hai-shu" target="_blank">
+							  <span style="color: #306f5e; font-weight: bold;">Hai Shu</span>
+							</a> and
+							<a href="https://publichealth.nyu.edu/faculty/alex-dahlen" target="_blank">
+							  <span style="color: #306f5e; font-weight: bold;">Alex Dahlen</span>
 							</a>!
-							I am exploring topics in 
-							<!-- <b><span style="color: black">interpretable machine learning</span></b>, -->
-							<b><span style="color: black">image segmentation</span></b>  
-							and <b><span style="color: black">uncertainty quantification</span></b>. I aim to develop transparent and reliable methods to augment decision-making.
+							My research interests include
+							multimodal representation learning,
+							medical image analysis,
+							uncertainty quantification,
+							and interpretable machine learning for healthcare. I aim to develop transparent and reliable methods to augment decision-making.
 						  </p>
-						  
+
 						  <p style="margin-bottom: 1.5em;">
-							I completed my undergraduate studies at UC Berkeley, studying Data Science, Statistics, and Economics. I had the privilege of working with Professor 
+							I completed my undergraduate studies at UC Berkeley, where I was fortunate to work with Professor
 							<a href="https://binyu.stat.berkeley.edu/" target="_blank">
 							  <span style="color: #306f5e; font-weight: bold;">Bin Yu</span>
-							</a>, developing uncertainty quantification methods under the Predictability–Computability–Stability (PCS) framework to support trustworthy decision-making.
-						  
-							I also worked as an undergraduate researcher at Lawrence Berkeley National Laboratory with Dr.  
+							</a>, and at Lawrence Berkeley National Laboratory with Dr.
 							<a href="https://crd.lbl.gov/divisions/scidata/sdm/staff/alex-sim/" target="_blank">
 							  <span style="color: #306f5e; font-weight: bold;">Alex Sim</span>
 							</a>, Dr. 
-							<a href="https://profiles.lbl.gov/20161-john-wu/" target="_blank">
+							<a href="https://crd.lbl.gov/divisions/scidata/sdm/staff/sdm-affiliates/wu/" target="_blank">
 							  <span style="color: #306f5e; font-weight: bold;">John Wu</span>
 							</a>, and Professor 
 							<a href="https://jinoh-cs.github.io/" target="_blank">
 							  <span style="color: #306f5e; font-weight: bold;">Jinoh Kim</span>
-							</a>, where I developed conditional LSTM models to analyze and predict networking performance.
-						  
-							In addition, I was part of the BOBA Lab, working under the guidance of Professor 
-							<a href="https://parksinchaisri.github.io/" target="_blank">
-							  <span style="color: #306f5e; font-weight: bold;">Park Sinchaisri</span>
-							</a> on research in Human–AI interaction.
-						  </p>	
+							</a>.
+						  </p>
 						  
 						  <p style="margin-bottom: 1.5em;">
-							<em>Last Updated: Jul 2025</em>
+							<em>Last Updated: Oct 2026</em>
 						  </p>
 				  
 				  
@@ -181,28 +333,39 @@
 					  
 					  <!-- Right: Publications Text -->
 					  <div style="flex: 3 1 300px; max-width: 820px; margin-right: 100px;">
-						<h3 style="margin-bottom: 1rem;">Selected Publications</h1>
-						
+						<h3 style="margin-bottom: 1rem;">Selected Publications</h3>
+
 						<ul class="work-list">
-						  <li>2025</li>
+						  <li>2026</li>
 						  <li>
-							<a href="https://arxiv.org/abs/2505.08784" target="_blank">
+							<a href="https://doi.org/10.1073/pnas.2525138123" target="_blank">
 							PCS-UQ: Uncertainty Quantification via the Predictability-Computability-Stability Framework
 							</a>
 						  </li>
 						  <li> Abhineet Agarwal, Michael Xiao, Rebecca Barter, Omer Ronen, <b style="color: rgba(22,133,46,0.82)">Boyu Fan</b>, Bin Yu </li>
-						  <li>arXiv preprint, in preparation for submission to <i>PNAS</i></li>
+						  <li><i>Proceedings of the National Academy of Sciences (PNAS)</i>, 123(42), e2525138123</li>
 						</ul>
-				  
+
+						<ul class="work-list">
+						  <li>2026</li>
+						  <li>
+							<a href="https://doi.org/10.1371/journal.pone.0354780" target="_blank">
+							Understanding Retention in Longitudinal Surveys Conducted by Mobile Phone in Lower-Resource Contexts: A Case Study from Kenya
+							</a>
+						  </li>
+						  <li>Corrina Moucheraud, <b style="color: rgba(22,133,46,0.82)">Boyu Fan</b>, Guanghao Li, Eric Ochieng, George Ganda, Ginger Golub, Alex Dahlen</li>
+						  <li><i>PLOS ONE</i>, 21(8), e0354780</li>
+						</ul>
+
 						<ul class="work-list">
 						  <li>2025</li>
 						  <li>
-							<a href="https://escholarship.org/uc/item/6dj897vz#main" target="_blank">
+							<a href="https://doi.org/10.1109/CCNC54725.2025.10976138" target="_blank">
 							Conditional Recurrent Neural Networks for Enhancing Throughput Prediction and Slow File Transfers Detection in Large Science Workflows
 							</a>
 						  </li>
-						  <li><b style="color: rgba(22,133,46,0.82)">Boyu Fan</b>, Alex Sim, Kesheng Wu, Jinoh</li>
-						  <li><i>CCNC 2025</i>, Presented in person in Las Vegas, NV, USA</li>
+						  <li><b style="color: rgba(22,133,46,0.82)">Boyu Fan</b>, Alex Sim, Kesheng Wu, Jinoh Kim</li>
+						  <li><i>2025 IEEE 22nd Consumer Communications &amp; Networking Conference (CCNC)</i>, Presented in person in Las Vegas, NV, USA</li>
 						</ul>
 					  </div>
 					</div>
@@ -218,35 +381,43 @@
 						<!-- Right: Teaching Text and Items -->
 						<div style="flex: 3 1 300px; max-width: 760px;">
 							<h3 style="margin-bottom: 1rem;">Teaching</h3>
-							<p style="margin-bottom: 1.5em;">
-							I enjoy teaching and mentoring. Here are some of the courses I’ve helped run at UC Berkeley. 
-							Responsibilities typically include leading discussions or lab sections (with around 25–30 students), 
-							reviewing course material, writing exam, and holding office hours.
-							</p>
-						  
-							<div class="features">				  
-								<section>
-								  <div>
-									<h5>[Teaching Assistant] DATA 102: Data, Inference, and Decisions</h5>
-									<p>Content: Bayesian/frequentist inference, causal inference, robustness, fairness, decision theory.</p>
-									<p><em>Fall 2024, [Infrastructure Head] Spring 2025</em></p>
-								  </div>
-								</section>
-							  
-							  <section>
-								<div>
-								  <h5>[Teaching Assistant] DATA 100: Principles and Techniques of Data Science</h5>
-								  <p>Content: EDA, regression/classification, data cleaning, visualization, scalable data processing.</p>
-								  <p><em>Summer 2024</em></p>
-								</div>
-							  </section>
+							<p style="margin-bottom: 1.5em;">I enjoy teaching and mentoring. Here are some of the courses I’ve helped run at NYU and UC Berkeley.</p>
 
-							  <section>
-								<div>
-								  <h5><em>More to come ...</em></h5>
-								</div>
-							  </section>
-							
+							<div class="teach-school">
+							  <div class="teach-head">
+								<span class="teach-name">New York University</span>
+								<span class="teach-role">Teaching Assistant</span>
+							  </div>
+							  <ul class="teach-list">
+								<li>
+								  <span><span class="teach-code">GPH-GU 2372/3372</span>Applied Bayesian Analysis in Public Health</span>
+								  <span class="teach-term">Fall 2026</span>
+								</li>
+								<li>
+								  <span><span class="teach-code">GPH-GU 2235</span>Biostatistical Consulting</span>
+								  <span class="teach-term">Spring 2026</span>
+								</li>
+							  </ul>
+							</div>
+
+							<div class="teach-school">
+							  <div class="teach-head">
+								<span class="teach-name">UC Berkeley</span>
+								<span class="teach-role">Teaching Assistant</span>
+							  </div>
+							  <ul class="teach-list">
+								<li>
+								  <span>
+									<span class="teach-code">DATA 102</span>Data, Inference, and Decisions
+									<span class="teach-note">Infrastructure Head, Spring 2025</span>
+								  </span>
+								  <span class="teach-term">Fall 2024 - Spring 2025</span>
+								</li>
+								<li>
+								  <span><span class="teach-code">DATA 100</span>Principles and Techniques of Data Science</span>
+								  <span class="teach-term">Summer 2024</span>
+								</li>
+							  </ul>
 							</div>
 					</div>
 				</section> 
@@ -258,79 +429,18 @@
 						<!-- Left: Optional Image or Leave Blank -->
 						<div style="flex: 1 1 240px; max-width: 240px;"></div>
 	
-						<!-- Right: Teaching Text and Items -->
-						<div style="flex: 3 1 300px; max-width: 820;">
+						<!-- Right: News Items -->
+						<div style="flex: 3 1 300px; max-width: 820px;">
 							<h3 style="margin-bottom: 1rem;">News</h3>
-							<p>
-								<em>Under construction. Stay tuned for updates!</em>
-							</p>
+							<ul class="news-list">
+							  <li>
+								<span class="news-date">Jun 2026</span>
+								<span>Passed the Biostatistics Ph.D. comprehensive exam!</span>
+							  </li>
+							</ul>
 						</div>
 					</div>
 				</section>
-
-				<!-- Four -->
-					<section id="four" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h3>Get in touch</h3>
-							<p><em>Note: This form is not connected to a server endpoint yet. Functionality will be added soon.
-								<br />
-								Please reach out via email for now!
-							</em></p>
-							<div class="split style1">
-								<section>
-									<form onsubmit="alert('Please connect via email for now! Functionality will be added soon!'); return false;">
-										<div class="fields">
-											<div class="field half">
-												<label for="name">Name</label>
-												<input type="text" name="name" id="name" />
-											</div>
-											<div class="field half">
-												<label for="email">Email</label>
-												<input type="text" name="email" id="email" />
-											</div>
-											<div class="field">
-												<label for="message">Message</label>
-												<textarea name="message" id="message" rows="5"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><a href="" class="button submit">Send Message</a></li>
-										</ul>
-									</form>
-								</section>
-								<section>
-									<ul class="contact">
-										<li>
-											<h3>Address</h3>
-											<span>708 Broadway, 4th Floor, Department of Biostatistics, <br />
-											New York University, <br />
-											New York, NY 10003, <br />
-											USA</span>
-										</li>
-										<li>
-											<h3>Email</h3>
-											<a href="boyu.fan@nyu.edu">boyu.fan@nyu.edu</a>
-										</li>
-										<!-- <li>
-											<h3>Phone</h3>
-											<span>(000) 000-0000</span>
-										</li> -->
-										<li>
-											<h3>Social</h3>
-											<ul class="icons">
-												<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
-												<li><a href="https://github.com/BoyuFan1" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="https://www.instagram.com/boris_fan1031/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="https://www.linkedin.com/in/boyu-fan-04669b22b/?trk=public_profile_browsemap" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-												<li><a href="https://scholar.google.com/citations?user=TJ2jiz8AAAAJ&hl=en" class="icon solid fa-graduation-cap"><span class="label">Google Scholar</span></a></li>
-											</ul>
-										</li>
-									</ul>
-								</section>
-							</div>
-						</div>
-					</section>
 
 			</div>
 
@@ -338,7 +448,7 @@
 			<footer id="footer" class="wrapper style1-alt">
 				<div class="inner">
 					<ul class="menu">
-						<li>&copy; Boyu Fan 2025. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Boyu Fan 2026. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</div>
 			</footer>
@@ -363,7 +473,7 @@
 					"<span style=\"color: #306F5EFF\">Boyu \\\"Boris\\\" Fan</span>",
 					"a Data Scientist",
 					"a Tennis Player",
-					"a Crypto Enthusiast",
+					"a Blockchain Enthusiast",
 					],
 				typeSpeed: 90,
 				backDelay: 700,
@@ -384,8 +494,5 @@
 			</script>
 	</body>
 </html>
-
-
-
 
 
